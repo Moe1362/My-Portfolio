@@ -49,6 +49,7 @@ header {
     align-items: center;
     background-color: var(--header);
     box-shadow: 0 5px 35px rgb(6, 74, 6);
+    
 }
 
 header span {
@@ -169,6 +170,7 @@ main {
     background-size: 150%;
     font-size: 2rem;
     color: #35520a;
+    
 
 }
 
@@ -180,6 +182,7 @@ main {
 .flex-item:hover {
     background-color: #2F4F4F;
     color: #ADFF2F;
+    box-shadow: 0 5px 35px rgb(6, 74, 6);
 }
 
 .contact address {
@@ -195,10 +198,18 @@ main {
     padding: 5px;
     font-size: 1.5rem;
     display: inline-block;
-    text-decoration: none;
+    
+    
 }
 .contact address a:hover {
     color: #2F4F4F;
-    font-size: large;
+    
 }
+
+.soccor {
+    background-image: url("/Users/mohammad/Desktop/Bootcamp Challenges/module-02/assets/images/soccer-and-football-player-logo-design-dribbling-ball-logo-icon-design-vector.jpg");
+    background-size: 40% auto;
+}
+
+
 
