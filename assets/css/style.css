@@ -4,18 +4,21 @@
 
 :root {
 
-    --light: azure;
-    --dark: rgb(88, 35, 4);
-    --header: #2F4F4F;
+    --light: #EEEEEE;
+    --dark: #222831;
+    --header: #51557E;
     --bright: #ADFF2F;
+    --shadow: #8FD6E1;
+    --nav: #FCDC2A;
+    --body: #793FDF;
 }
 
 body {
     margin: 0;
     padding: 0;
-    color: var(--dark);
+    color: var(--body);
     font-family: American Typewriter, serif;
-    background-color: var(--light);
+    background-color: var(--dark);
 
 }
 
@@ -42,24 +45,33 @@ p {
 header {
     padding: 15px 6% 15px 0;
     display: flex;
+    height: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding-left: 40px;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     background-color: var(--header);
-    box-shadow: 0 5px 35px rgb(6, 74, 6);
+    background-image: linear-gradient(
+    to bottom,
+    rgb(0 0 0 / 0%),
+    rgb(0 0 0 / 25%)
+  );
+    border-radius: 10px;
+    box-shadow: 0 5px 35px var(--shadow);
     
 }
 
 header span {
-    color: var(--bright);
-    background-color: rgb(6, 6, 6);
+    color: var(--shadow);
     margin: 0px;
     font-size: 4vw;
     line-height: 1;
 
 }
+
 
 nav {
 
@@ -72,13 +84,15 @@ nav a {
 
     text-decoration: none;
     padding: 5px 10px;
-    color: var(--bright);
+    color: var(--shadow);
     font-size: 1.5rem;
 }
 
 nav a:hover {
     background-size: 100% 100%;
-    color: #808000;
+    color: var(--nav);
+   
+    
 }
 
 nav a:last-child {
@@ -91,6 +105,10 @@ main {
     margin-bottom: 50px;
 }
 
+.hr {
+    box-shadow: 0 5px 35px var(--shadow);
+}
+
 .top {
     padding: 2% 6%;
     justify-content: center;
@@ -99,12 +117,11 @@ main {
     min-height: 30vh;
 }
 
-.top div {
-    background-image: linear-gradient(darkgreen, lightgreen, #0B5345);
-    flex: 0 0 90%;
-    
-
+.top .title img {
+    border-radius: 500px;
+    height: 300px;
 }
+
 
 .page-wrapper {
     max-width: 88%;
@@ -124,10 +141,10 @@ main {
 }
 
 .page-section > h2 {
-    flex: 0 0 20%;
-    text-align: right;
-    padding-right: 15px;
-    border-right: 4px solid var(--header);
+    flex:auto;
+    text-align: center;
+   /* padding-right: 15px;*/
+   /* border-right: 4px solid var(--header); */
     font-size: 4vw;
     line-height: 1.1;
 }
@@ -140,6 +157,7 @@ main {
     margin-bottom: 20px;
     margin-left: 20px;
     font-size: 23px;
+    color: var(--shadow);
 }
 .page-section p .about {
     font-weight: bold;
@@ -166,7 +184,7 @@ main {
     padding: 0 0 20px 0;
     margin: 0.5em;
     text-decoration: none;
-    background-blend-mode: saturation;
+    background-blend-mode:darken;
     background-size: 150%;
     font-size: 2rem;
     color: #35520a;
@@ -183,6 +201,7 @@ main {
     background-color: #2F4F4F;
     color: #ADFF2F;
     box-shadow: 0 5px 35px rgb(6, 74, 6);
+    
 }
 
 .contact address {
@@ -191,25 +210,38 @@ main {
     justify-content: space-around;
     align-items: center;
     height: 100%;
+    border: 1px solid var(--light);
+    border-radius: 50px;
+    background-color: var(--header);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top:20px;
+    box-shadow: 0 5px 35px var(--header);
 }
 
 .contact address a {
-    color: var(--dark);
+    color: var(--shadow);
     padding: 5px;
     font-size: 1.5rem;
     display: inline-block;
+   
     
     
 }
-.contact address a:hover {
-    color: #2F4F4F;
+.contact address .img {
+    height: 40px;
+    margin-top: 20px;
+    
+}
+.contact address img:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+  
     
 }
 
-.soccor {
-    background-image: url("/Users/mohammad/Desktop/Bootcamp Challenges/module-02/assets/images/soccer-and-football-player-logo-design-dribbling-ball-logo-icon-design-vector.jpg");
-    background-size: 40% auto;
-}
+
 
 
 
