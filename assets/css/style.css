@@ -152,6 +152,7 @@ footer {
     padding-right: 15px;
     font-size: 4vw;
     line-height: 1.1;
+    
 }
 
 .page-section > div {
@@ -199,9 +200,23 @@ footer {
 
 }
 .flex-item > div {
+    justify-content: center;
     text-align: center;
+   
+
     
 }
+.flex-item .item-1 {
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+
+.flex-item div .image {
+    width: 55%;
+}
+
 
 .flex-item:first-child {
     min-height: 400px;
