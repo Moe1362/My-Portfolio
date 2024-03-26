@@ -11,6 +11,7 @@
     --shadow: #8FD6E1;
     --nav: #FCDC2A;
     --body: #793FDF;
+    --box-shadow: 0 5px 35px var(--shadow);
 }
 
 body {
@@ -62,7 +63,7 @@ header {
     rgb(0 0 0 / 25%)
   );
     border-radius: 10px;
-    box-shadow: 0 5px 35px var(--shadow);
+    box-shadow: var(--box-shadow);
     
 }
 
@@ -125,7 +126,7 @@ footer h1 {
 }
 
 .hr {
-    box-shadow: 0 5px 35px var(--shadow);
+    box-shadow: var(--box-shadow);
 }
 
 /* My Image Section */
@@ -145,7 +146,7 @@ footer h1 {
     margin-top: -50px;
     margin-bottom: -50px;
     background-color: var(--header);
-    box-shadow: 0 5px 35px var(--shadow);
+    box-shadow: var(--box-shadow);
 
 }
 
@@ -243,7 +244,7 @@ footer h1 {
 .flex-item:hover {
     background-color: var(--shadow);
     color: var(--dark);
-    box-shadow: 0 5px 35px var(--shadow);
+    box-shadow: var(--box-shadow);
     
 }
 
@@ -267,7 +268,7 @@ footer h1 {
     border-radius: 50px;
     background-color: var(--header);
     margin-top:20px;
-    box-shadow: 0 5px 35px var(--header);
+    box-shadow: var(--box-shadow);
     
 }
 
@@ -292,7 +293,7 @@ footer h1 {
 
 @media only screen and (max-width: 500px) {
     header span {
-      font-size: 40px;
+      font-size: 50px;
       color: var(--dark);
     }
     nav a {
