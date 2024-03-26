@@ -189,11 +189,13 @@ footer {
     border: 5px solid var(--header);
     border-radius: 30px;
     display: flex;
-    min-height: 150px;
+   /* min-height: 150px;
     max-height: 150px;
     flex-basis: calc(50%- 1em);
     align-items:first baseline;
-    padding: 0 0 20px 0;
+    padding: 0 0 20px 0; */
+    flex-direction: column;
+    justify-content: center;
     margin: 20px;
     text-decoration: none;
     background-blend-mode:lighten;
@@ -211,6 +213,11 @@ footer {
     
 }
 .flex-item .item-1 {
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+}
+.flex-item .item-2 {
     align-items: center;
     justify-content: center;
     margin-left: 25%;
